@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="12">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="13"/>
+			<ChildItems>
+				<Button name="Тест" id="4">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.Тест</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запустить рег. задание по заполнению регистра "син_РезультатыПрохожденияПредсменногоЭкзаменатораЭСМО"</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ТестРасширеннаяПодсказка" id="5"/>
+				</Button>
+				<Button name="ЗапуститьЛокальноБезРегЗадания" id="14">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ЗапуститьЛокальноБезРегЗадания</CommandName>
+					<ExtendedTooltip name="ЗапуститьЛокальноБезРегЗаданияРасширеннаяПодсказка" id="15"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Идентификатор" id="1">
+			<DataPath>Объект.Идентификатор</DataPath>
+			<Visible>false</Visible>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ИдентификаторКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ИдентификаторРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<Button name="ЗаписиНеПопавшие" id="6">
+			<Type>UsualButton</Type>
+			<Visible>false</Visible>
+			<CommandName>Form.Command.ЗаписиНеПопавшие</CommandName>
+			<ExtendedTooltip name="ЗаписиНеПопавшиеРасширеннаяПодсказка" id="7"/>
+		</Button>
+		<Button name="ДозаполнитьСотрудниковВРегистре" id="8">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ДозаполнитьСотрудниковВРегистре</CommandName>
+			<ExtendedTooltip name="ДозаполнитьСотрудниковВРегистреРасширеннаяПодсказка" id="9"/>
+		</Button>
+		<Button name="ПерезаполнитьШахту" id="10">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПерезаполнитьШахту</CommandName>
+			<ExtendedTooltip name="ПерезаполнитьШахтуРасширеннаяПодсказка" id="11"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.син_Тест40088</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Тест" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Тест</Action>
+		</Command>
+		<Command name="ЗаписиНеПопавшие" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записи не попавшие</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записи не попавшие</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписиНеПопавшие</Action>
+		</Command>
+		<Command name="ДозаполнитьСотрудниковВРегистре" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дозаполнить сотрудников в регистре</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дозаполнить сотрудников в регистре</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДозаполнитьСотрудниковВРегистре</Action>
+		</Command>
+		<Command name="ПерезаполнитьШахту" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перезаполнить шахту</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перезаполнить шахту</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПерезаполнитьШахту</Action>
+		</Command>
+		<Command name="ЗапуститьЛокальноБезРегЗадания" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить локально без рег задания</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить локально без рег задания</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапуститьЛокальноБезРегЗадания</Action>
+		</Command>
+	</Commands>
+</Form>
